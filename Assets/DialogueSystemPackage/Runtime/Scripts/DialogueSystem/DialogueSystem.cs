@@ -30,6 +30,9 @@ public class DialogueSystem : MonoBehaviour
     public TMP_Text dialogueText;  // text element to display dialogue
     public Button nextButton;  // button to proceed with dialogue
 
+    // reference to ObjectInstantiator.cs for spawning objects
+    public ObjectInstantiator objectInstantiator;
+
     private int currentLine = 0;  // tracks the current dialogue line
 
     // starts the dialogue
@@ -69,6 +72,12 @@ public class DialogueSystem : MonoBehaviour
             if (dialogueText != null)
             {
                 dialogueText.text = formattedLine;  // display formatted dialogue text
+            }
+
+            // check if it's the second line to instantiate the cube
+            if (currentLine == 1) // 2nd line, since index starts at 0
+            {
+                objectInstantiator.InstantiateObject(); // instantiate the cube
             }
 
             currentLine++;  // move to the next dialogue line after displaying the current one

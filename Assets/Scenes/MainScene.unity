@@ -377,9 +377,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueLines:
-  - Hello, how are you?
-  - I'm doing well, thank you!
-  - Good to hear! What can I do for you today?
+  - How are you?
+  - I have a cube for you.
+  - You're welcome.
   onDialogueEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -391,6 +391,7 @@ MonoBehaviour:
   moveDuration: 1.5
   dialogueText: {fileID: 478654120}
   nextButton: {fileID: 1116351333}
+  objectInstantiator: {fileID: 1686867283}
 --- !u!4 &767239850
 Transform:
   m_ObjectHideFlags: 0
@@ -675,6 +676,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116351331}
   m_CullTransparentMesh: 1
+--- !u!1 &1686867282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1686867284}
+  - component: {fileID: 1686867283}
+  m_Layer: 0
+  m_Name: Object Instantiator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1686867283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686867282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8b232fdf9a52344896978c10fc33c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToInstantiate: {fileID: 1478653315088797849, guid: c75e4c1df2c066244a1c4a13ad0bc474, type: 3}
+  spawnLocation: {fileID: 5637227435411151131, guid: c75e4c1df2c066244a1c4a13ad0bc474, type: 3}
+  defaultPosition: {x: 0, y: 0, z: 0}
+  rotationY: -45
+--- !u!4 &1686867284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686867282}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1990528714
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,3 +1036,4 @@ SceneRoots:
   - {fileID: 2103036453}
   - {fileID: 1990528717}
   - {fileID: 767239850}
+  - {fileID: 1686867284}
