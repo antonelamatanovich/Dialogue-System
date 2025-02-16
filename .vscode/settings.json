@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Dialogue System.sln"
+    "dotnet.defaultSolution": "Dialogue-System.sln"
 }
