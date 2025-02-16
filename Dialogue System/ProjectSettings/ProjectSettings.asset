@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Antonela Matanovic
   productName: Dialogue System
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -816,7 +816,8 @@ PlayerSettings:
   webGLWebAssemblyBigInt: 0
   webGLCloseOnQuit: 0
   webWasm2023: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Standalone: NEWTONSOFT_JSON_PRESENT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
