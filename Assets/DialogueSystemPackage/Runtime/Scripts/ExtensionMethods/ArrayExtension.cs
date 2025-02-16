@@ -15,7 +15,7 @@ public static class ArrayExtension
     // shuffles an array randomly
     public static void Shuffle<T>(this T[] array)
     {
-        Random rand = new Random();
+        System.Random rand = new System.Random();  // use System.Random
         for (int i = array.Length - 1; i > 0; i--)
         {
             int j = rand.Next(i + 1);
