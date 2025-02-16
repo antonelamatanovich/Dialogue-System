@@ -36,6 +36,7 @@ public class DialogueSystem : MonoBehaviour
     public void StartDialogue()
     {
         currentLine = 0;  // reset dialogue position to the start
+        dialogueLines.Shuffle();  // shuffle dialogue lines before starting
 
         // move speaker if assigned
         if (speakerTransform != null)
@@ -62,7 +63,7 @@ public class DialogueSystem : MonoBehaviour
     // displays the current dialogue line
     public void ShowDialogue()
     {
-        if (currentLine < dialogueLines.Length)
+        if (dialogueLines.HasNextLine(currentLine))
         {
             string formattedLine = dialogueLines[currentLine].FormatDialogue(playerName);  // format text with playerName
             if (dialogueText != null)

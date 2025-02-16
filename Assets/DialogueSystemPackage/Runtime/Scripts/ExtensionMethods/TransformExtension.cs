@@ -7,14 +7,28 @@
  *                Includes a method to smoothly move a transform to a target position.
  ********************************************************************************/
 
-using System;
 using UnityEngine;
+using System.Collections;
 
 public static class TransformExtension
 {
-    // smoothly moves a transform to a target position over time
-    public static void MoveTo(this Transform transform, Vector3 target, float duration)
+    public static void MoveTo(this Transform transform, Vector3 targetPosition, float duration)
     {
-        transform.position = Vector3.Lerp(transform.position, target, Time.deltaTime / duration);
+        transform.GetComponent<MonoBehaviour>().StartCoroutine(MoveRoutine(transform, targetPosition, duration));
+    }
+
+    private static IEnumerator MoveRoutine(Transform transform, Vector3 target, float duration)
+    {
+        Vector3 startPosition = transform.position;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            transform.position = Vector3.Lerp(startPosition, target, elapsedTime / duration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.position = target;
     }
 }
