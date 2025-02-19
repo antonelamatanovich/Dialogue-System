@@ -14,4 +14,4 @@ public static class DialogueExtensions
     {
         return currentLine < dialogueLines.Length;
     }
-}
+}   
