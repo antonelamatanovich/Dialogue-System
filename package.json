@@ -3,7 +3,7 @@
   "displayName": "Dialogue System",
   "description": "A modular dialogue system for Unity projects.",
   "unity": "6.0",
-  "unityRelease": "0.30f1",
+  "unityRelease": "30",
   "documentationUrl": "https://github.com/antonelamatanovich/Dialogue-System/wiki",
   "changelogUrl": "https://github.com/antonelamatanovich/Dialogue-System/releases/tag/v0.1.0",
   "licensesUrl": "https://github.com/antonelamatanovich/Dialogue-System/blob/main/LICENSE",
