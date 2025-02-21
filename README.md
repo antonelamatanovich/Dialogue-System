@@ -19,7 +19,7 @@ The **Dialogue System Package** is a modular and flexible dialogue system for Un
 3. Click the `+` button and select `Add package from git URL`.
 4. Enter the repository URL: 
    ```
-   https://github.com/antonelamatanovich/Dialogue-System/tree/upm
+   https://github.com/antonelamatanovich/Dialogue-System.git
    ```
 5. Click `Add` and wait for Unity to import the package.
 
