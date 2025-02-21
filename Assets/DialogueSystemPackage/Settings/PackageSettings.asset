@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c3a4eac3d4d6aa41ac61e99f1d05677, type: 3}
+  m_Name: PackageSettings
+  m_EditorClassIdentifier: 
+  domainName: com
+  companyName: company
+  useSettingsCompanyName: 1
+  packageName: package-name
+  useSettingsProductName: 1
+  version: 0.0.0
+  useSettingsVersion: 1
+  displayName: 
+  _useSettingsProductName: 1
+  description: 
+  unity: 2021.3
+  useCurrentUnityVersion: 1
+  unityRelease: .0f1
+  useCurrentUnityRelease: 1
+  _dependencies: []
+  documentationUrl: https://
+  changelogUrl: https://
+  licensesUrl: 
+  keywords:
+  - Unity Package
+  samples:
+  - displayName: Sample
+    description: This is a sample.
+    path: Samples~/Sample
+  author:
+    name: Author
+    useSettingsCompanyName: 1
+    email: author@mail.com
+    url: https://
